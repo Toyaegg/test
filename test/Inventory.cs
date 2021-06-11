@@ -144,7 +144,7 @@ namespace test
                     }
                     else
                     {
-                        Console.WriteLine("物品[{0}]现有{1}个，数量不足！", cell.Item.Name, cells[cell.Item.Name].Count);
+                        Console.WriteLine("减少{0}个物品失败，物品[{1}]现有{2}个，数量不足！", cell.Count, cell.Item.Name, cells[cell.Item.Name].Count);
                         return false;
                     }
                     Console.WriteLine("减少了{0}个[{1}]，剩余{2}个", cell.Count, cell.Item.Name, cells[cell.Item.Name].Count);
