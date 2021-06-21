@@ -43,16 +43,57 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Character.cs" />
-    <Compile Include="Dice.cs" />
-    <Compile Include="Inventory.cs" />
-    <Compile Include="Item.cs" />
-    <Compile Include="Manager.cs" />
+    <Compile Include="Character\Character.cs" />
+    <Compile Include="Dice\Dice.cs" />
+    <Compile Include="Inventory\Inventory.cs" />
+    <Compile Include="Inventory\Item.cs" />
+    <Compile Include="Manager\Manager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SpaceShip\DefenseSystem\DefenseSystem.cs" />
+    <Compile Include="SpaceShip\ECOSystem\ECOSystem.cs" />
+    <Compile Include="SpaceShip\EnergySystem\EnergySystem.cs" />
+    <Compile Include="SpaceShip\FirepowerSystem\FirepowerSystem.cs" />
+    <Compile Include="SpaceShip\PowerSystem\PowerSystem.cs" />
+    <Compile Include="SpaceShip\RecyclingSystem\RecyclingSystem.cs" />
+    <Compile Include="SpaceShip\ResourceSystem\ResourceSystem.cs" />
+    <Compile Include="SpaceShip\SpaceShip.cs" />
+    <Compile Include="SpaceShip\SupportSystem\SupportSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SpaceShip\DefenseSystem\Armor\" />
+    <Folder Include="SpaceShip\DefenseSystem\Plane\" />
+    <Folder Include="SpaceShip\DefenseSystem\Ship\" />
+    <Folder Include="SpaceShip\DefenseSystem\Weapon\" />
+    <Folder Include="SpaceShip\ECOSystem\Canteen\" />
+    <Folder Include="SpaceShip\ECOSystem\Dorm\" />
+    <Folder Include="SpaceShip\ECOSystem\PlantArea\" />
+    <Folder Include="SpaceShip\ECOSystem\Toilet\" />
+    <Folder Include="SpaceShip\ECOSystem\Train\" />
+    <Folder Include="SpaceShip\EnergySystem\Battery\" />
+    <Folder Include="SpaceShip\EnergySystem\EnergyPipe\" />
+    <Folder Include="SpaceShip\FirepowerSystem\Plane\" />
+    <Folder Include="SpaceShip\FirepowerSystem\Ship\" />
+    <Folder Include="SpaceShip\FirepowerSystem\Weapon\Cannon\" />
+    <Folder Include="SpaceShip\FirepowerSystem\Weapon\Gun\" />
+    <Folder Include="SpaceShip\FirepowerSystem\Weapon\Missile\" />
+    <Folder Include="SpaceShip\FirepowerSystem\Weapon\Rocket\" />
+    <Folder Include="SpaceShip\FirepowerSystem\Weapon\Torpedo\" />
+    <Folder Include="SpaceShip\PowerSystem\EnergySupplyDevice\" />
+    <Folder Include="SpaceShip\PowerSystem\Engine\" />
+    <Folder Include="SpaceShip\PowerSystem\Propeller\" />
+    <Folder Include="SpaceShip\RecyclingSystem\MaterialConversionDevice\Compose\" />
+    <Folder Include="SpaceShip\RecyclingSystem\MaterialConversionDevice\Decompose\" />
+    <Folder Include="SpaceShip\RecyclingSystem\MaterialTransportPipe\" />
+    <Folder Include="SpaceShip\ResourceSystem\Factory\Package\" />
+    <Folder Include="SpaceShip\ResourceSystem\Factory\Part\" />
+    <Folder Include="SpaceShip\ResourceSystem\Mine\" />
+    <Folder Include="SpaceShip\ResourceSystem\Refinery\" />
+    <Folder Include="SpaceShip\SupportSystem\Block\" />
+    <Folder Include="SpaceShip\SupportSystem\Traction\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

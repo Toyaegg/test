@@ -200,5 +200,10 @@ namespace test
             cell.Count = count;
             return inventory.RemoveItem(cell);
         }
+
+        public Item GetItem(string name)
+        {
+            return inventory.GetItem(name);
+        }
     }
 }

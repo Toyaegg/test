@@ -10,6 +10,15 @@ namespace test
     {
         static void Main(string[] args)
         {
+            //RPGAbout();
+
+            Console.ReadLine();
+        }
+
+        #region RPGAbout
+
+        static void RPGAbout()
+        {
             Player p = new Player();
 
             GameManager.Instance.RegistPlayer(p);
@@ -32,9 +41,10 @@ namespace test
             Console.WriteLine("MAG:{0}", GameManager.Instance.player.Attribute.curMAG);
 
             DiceRandomManager.Instance.RandomDice(3, 6);
+            //DiceRandomManager.Instance.RandomDice(3, 1);
 
-            InventoryManager.Instance.AddMoney(1,2,3);
-            InventoryManager.Instance.RemoveMoney(0,60,86);
+            InventoryManager.Instance.AddMoney(1, 2, 3);
+            InventoryManager.Instance.RemoveMoney(0, 60, 86);
 
             Item item = new Item();
             Item item2 = new Item();
@@ -43,9 +53,21 @@ namespace test
             InventoryManager.Instance.AddItem(item, 30);
             InventoryManager.Instance.RemoveItem(item, 20);
             InventoryManager.Instance.RemoveItem(item, 20);
+            InventoryManager.Instance.GetItem("5");
+            InventoryManager.Instance.GetItem("皮皮虾");
+            InventoryManager.Instance.RemoveItem(item, 10);
             InventoryManager.Instance.RemoveItem(item2, 30);
-
-            Console.ReadLine();
         }
+
+        #endregion
+
+        #region SpaceShipAbout
+
+        static void SpaceShioAbout()
+        {
+
+        }
+
+        #endregion
     }
 }
