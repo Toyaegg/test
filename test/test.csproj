@@ -48,6 +48,7 @@
     <Compile Include="Inventory\Inventory.cs" />
     <Compile Include="Inventory\Item.cs" />
     <Compile Include="Manager\Manager.cs" />
+    <Compile Include="MathUtil\MathUtil.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SpaceShip\DefenseSystem\DefenseSystem.cs" />

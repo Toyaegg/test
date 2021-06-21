@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using test.SpaceShips;
 
 namespace test
 {
@@ -11,7 +12,7 @@ namespace test
         static void Main(string[] args)
         {
             //RPGAbout();
-
+            SpaceShioAbout();
             Console.ReadLine();
         }
 
@@ -65,7 +66,9 @@ namespace test
 
         static void SpaceShioAbout()
         {
-
+            SpaceShip spaceShip = new SpaceShip();
+            spaceShip.Init("Pogis", 800, 300, 300, 4000000);
+            Console.WriteLine(spaceShip.GetShipType());
         }
 
         #endregion
