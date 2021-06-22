@@ -67,7 +67,11 @@ namespace test
         static void SpaceShioAbout()
         {
             SpaceShip spaceShip = new SpaceShip();
-            spaceShip.Init("Pogis", 800, 300, 300, 4000000);
+            spaceShip.CreateShip("Pogis");
+            spaceShip.SetShipShape(800, 300, 300, 4000000);
+            spaceShip.SetShipType(10);
+            spaceShip.Init();
+            DefenseSystemManager.Instance.CheckAll();
             Console.WriteLine(spaceShip.GetShipType());
         }
 
