@@ -24,7 +24,7 @@ namespace test.SpaceShips
 
         public override SystemStatus GetStatus()
         {
-            return currentSystemStatus;
+            return CurrentSystemStatus;
         }
 
         public override void Offline()

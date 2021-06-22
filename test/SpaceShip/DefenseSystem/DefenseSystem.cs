@@ -25,21 +25,25 @@ namespace test.SpaceShips
 
         private void CheckOutAllPart()
         {
-            LightArmor lightArmor = new LightArmor();
-            lightArmor.Name = "左侧方遮挡用轻型装甲板";
-            lightArmor.thickness = 30;
-            lightArmor.structStrength = 16;
+            LightArmor lightArmor = new LightArmor
+            {
+                Name = "左侧方遮挡用轻型装甲板",
+                thickness = 30,
+                structStrength = 16
+            };
             DefenseSystemManager.Instance.InsertPart(lightArmor);
-            lightArmor = new LightArmor();
-            lightArmor.Name = "右侧方遮挡用轻型装甲板";
-            lightArmor.thickness = 30;
-            lightArmor.structStrength = 16;
+            lightArmor = new LightArmor
+            {
+                Name = "右侧方遮挡用轻型装甲板",
+                thickness = 30,
+                structStrength = 16
+            };
             DefenseSystemManager.Instance.InsertPart(lightArmor);
         }
 
         public override SystemStatus GetStatus()
         {
-            return currentSystemStatus;
+            return CurrentSystemStatus;
         }
 
         public override void Offline()

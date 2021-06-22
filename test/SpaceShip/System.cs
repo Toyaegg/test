@@ -10,7 +10,7 @@ namespace test.SpaceShips
     {
         private SystemStatus systemStatus = SystemStatus.离线;
         public string Name;
-        public SystemStatus currentSystemStatus
+        public SystemStatus CurrentSystemStatus
         {
             get { return systemStatus; }
         }

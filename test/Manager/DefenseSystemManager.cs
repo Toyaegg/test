@@ -8,7 +8,7 @@ namespace test.SpaceShips
 {
     class DefenseSystemManager : Manager<DefenseSystemManager>
     {
-        Dictionary<int, IDefense> defenses = new Dictionary<int, IDefense>();
+        readonly Dictionary<int, IDefense> defenses = new Dictionary<int, IDefense>();
         private int nowIndex = 0;
 
         public void InsertPart(IDefense part)

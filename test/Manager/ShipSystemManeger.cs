@@ -8,7 +8,7 @@ namespace test.SpaceShips
 {
     class ShipSystemManager : Manager<ShipSystemManager>
     {
-        Dictionary<string, ShipSystem> systems = new Dictionary<string, ShipSystem>();
+        readonly Dictionary<string, ShipSystem> systems = new Dictionary<string, ShipSystem>();
         public void Init(ShipSystem system)
         {
             system.Init();
