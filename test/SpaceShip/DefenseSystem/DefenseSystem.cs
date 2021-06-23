@@ -29,14 +29,16 @@ namespace test.SpaceShips
             {
                 Name = "左侧方遮挡用轻型装甲板",
                 thickness = 30,
-                structStrength = 16
+                structStrength = 16,
+                Completion = 1f
             };
             DefenseSystemManager.Instance.InsertPart(lightArmor);
             lightArmor = new LightArmor
             {
                 Name = "右侧方遮挡用轻型装甲板",
                 thickness = 30,
-                structStrength = 16
+                structStrength = 16,
+                Completion = 1f
             };
             DefenseSystemManager.Instance.InsertPart(lightArmor);
         }

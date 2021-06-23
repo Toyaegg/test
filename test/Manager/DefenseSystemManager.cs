@@ -25,7 +25,7 @@ namespace test.SpaceShips
             Console.WriteLine("防御系统开始遍历系统成员：");
             for (int i = 0; i < defenses.Count; i++)
             {
-                Console.WriteLine("系统内编号：{0} -- {1}", i, defenses[i].Name);
+                Console.WriteLine("系统内编号：{0} -- {1} -- 完整度{2}%", i, defenses[i].Name, defenses[i].Completion * 100);
             }
             Console.WriteLine();
         }

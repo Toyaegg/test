@@ -9,5 +9,7 @@ namespace test.SpaceShips
     interface IDefense
     {
         string Name { get; set; }
+
+        float Completion { get; set; }
     }
 }

@@ -17,12 +17,11 @@ namespace test.SpaceShips
         }
 
         public string Name { get; set; }
+        public float Completion { get; set; }
 
         public float thickness;
 
         public float structStrength;
-
-        public float damaged = 0;
 
         public string SelfCheck()
         {
