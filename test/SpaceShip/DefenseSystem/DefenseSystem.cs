@@ -25,22 +25,40 @@ namespace test.SpaceShips
 
         private void CheckOutAllPart()
         {
-            LightArmor lightArmor = new LightArmor
+            for (int i = 0; i < 6; i++)
             {
-                Name = "左侧方遮挡用轻型装甲板",
-                thickness = 30,
-                structStrength = 16,
-                Completion = 1f
-            };
-            DefenseSystemManager.Instance.InsertPart(lightArmor);
-            lightArmor = new LightArmor
+                LightArmor lightArmor = new LightArmor
+                {
+                    Name = "左侧方遮挡用轻型装甲板",
+                    thickness = 30,
+                    structStrength = 16,
+                    Completion = 1f
+                };
+                DefenseSystemManager.Instance.InsertPart(lightArmor);
+            }
+
+            for (int i = 0; i < 6; i++)
             {
-                Name = "右侧方遮挡用轻型装甲板",
-                thickness = 30,
-                structStrength = 16,
-                Completion = 1f
-            };
-            DefenseSystemManager.Instance.InsertPart(lightArmor);
+                LightArmor lightArmor = new LightArmor
+                {
+                    Name = "右侧方遮挡用轻型装甲板",
+                    thickness = 30,
+                    structStrength = 16,
+                    Completion = 1f
+                };
+                DefenseSystemManager.Instance.InsertPart(lightArmor);
+            }
+
+            for (int i = 0; i < 20; i++)
+            {
+                Drone drone = new Drone()
+                {
+                    Name = "II-型 无人机",
+                    Completion = 1f
+                };
+                DefenseSystemManager.Instance.InsertPart(drone);
+            }
+            
         }
 
         public override SystemStatus GetStatus()

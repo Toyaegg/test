@@ -6,19 +6,14 @@ using System.Threading.Tasks;
 
 namespace test.SpaceShips
 {
-    class Armor : IDefense
+    class Plane : IDefense
     {
-
         public int ID { get; set; }
         public string Name { get; set; }
         public int HP { get; set; }
         public int CurHP { get; set; }
         public DefenseSystemManager.DefenseType Type { get; set; }
         public float Completion { get; set; }
-
-        public float thickness;
-
-        public float structStrength;
 
         public string SelfCheck()
         {
@@ -50,12 +45,12 @@ namespace test.SpaceShips
 
         public void TakeDamage(int damage)
         {
-            if(CurHP < damage)
+            if (CurHP < damage)
             {
                 Console.WriteLine("数据错误！");
             }
             CurHP -= damage;
-            string tmp = String.Format("[{0}]遭到攻击，伤害值为：{1}！\n", Name, damage);
+            string tmp = String.Format("[{0}]遭到攻击，伤害值为：{1}！", Name, damage);
             Console.WriteLine(tmp);
             CalculateCompletion();
         }

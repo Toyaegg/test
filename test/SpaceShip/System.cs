@@ -25,9 +25,12 @@ namespace test.SpaceShips
         }
         public virtual void Init()
         {
-            Console.WriteLine("{0}初始化....", Name);
-            Console.WriteLine("{0}自检结束：{1}", Name, SelfCheck());
-            Console.WriteLine("{0}初始化完成。\n", Name);
+            string tmp = String.Format("{0}初始化....", Name);
+            Console.WriteLine(tmp);
+            tmp = String.Format("{0}自检结束：{1}", Name, SelfCheck());
+            Console.WriteLine(tmp);
+            tmp = String.Format("{0}初始化完成。\n", Name);
+            Console.WriteLine(tmp);
         }
         public abstract SystemStatus GetStatus();
 

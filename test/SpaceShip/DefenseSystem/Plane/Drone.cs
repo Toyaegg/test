@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace test.SpaceShips
 {
-    class LightArmor : Armor
+    class Drone : Plane
     {
-        public LightArmor()
+        public Drone()
         {
-            CurHP = HP = 350;
-            Type = DefenseSystemManager.DefenseType.装甲;
+            CurHP = HP = 50;
+            Type = DefenseSystemManager.DefenseType.飞机;
         }
     }
 }

@@ -57,6 +57,8 @@
     <Compile Include="SpaceShip\DefenseSystem\Armor\LightArmor.cs" />
     <Compile Include="SpaceShip\DefenseSystem\IDefense.cs" />
     <Compile Include="SpaceShip\DefenseSystem\DefenseSystem.cs" />
+    <Compile Include="SpaceShip\DefenseSystem\Plane\Drone.cs" />
+    <Compile Include="SpaceShip\DefenseSystem\Plane\Plane.cs" />
     <Compile Include="SpaceShip\ECOSystem\ECOSystem.cs" />
     <Compile Include="SpaceShip\EnergySystem\EnergySystem.cs" />
     <Compile Include="SpaceShip\FirepowerSystem\FirepowerSystem.cs" />
@@ -72,7 +74,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Output\" />
-    <Folder Include="SpaceShip\DefenseSystem\Plane\" />
     <Folder Include="SpaceShip\DefenseSystem\Ship\" />
     <Folder Include="SpaceShip\DefenseSystem\Weapon\" />
     <Folder Include="SpaceShip\ECOSystem\Canteen\" />

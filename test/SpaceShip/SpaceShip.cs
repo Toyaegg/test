@@ -79,11 +79,11 @@ namespace test.SpaceShips
             shipType = (ShipType) type;
         }
 
-        public void SetShipShape(float length, float height, float width, float weight)
+        public void SetShipShape(float length, float width, float height, float weight)
         {
             shipLength = length;
-            shipHeight = height;
             shipWidht = width;
+            shipHeight = height;
             shipWeight = weight;
         }
 
@@ -205,6 +205,14 @@ namespace test.SpaceShips
             驱逐舰,
             战斗机,
             维生舱
+        }
+
+        public void ShowShipInfo()
+        {
+            string tmp = String.Format(
+                "舰船名：{0}\n规格：{1}x{2}x{3}(长x宽x高，单位：米)\n质量：{4}吨\n{5}\n",
+                shipName, shipLength, shipWidht, shipHeight, shipWeight, GetShipType());
+            Console.WriteLine(tmp);
         }
     }
 }
