@@ -5,6 +5,7 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 using System.Timers;
 using test.SpaceShips;
 
@@ -12,27 +13,27 @@ namespace test
 {
     class Program
     {
-        private static Action act1;
-        private static Action<string, int> act2;
-        private static Func<string, int> func1;
-        private static Func<int, string> func2;
+        //private static Action act1;
+        //private static Action<string, int> act2;
+        //private static Func<string, int> func1;
+        //private static Func<int, string> func2;
 
-        delegate int getii(TestDele s);
+        //delegate int getii(TestDele s);
 
-        delegate void ppd();
+        //delegate void ppd();
 
-        private static event ppd pp;
+        //private static event ppd pp;
 
-        private getii moo;
+        //private getii moo;
 
-        static MyTimer mt = new MyTimer(true, false);
+        //static MyTimer mt = new MyTimer(true, false);
         static void Main(string[] args)
         {
-            mt.myEventHandler += TimerDo;
+            //mt.myEventHandler += TimerDo;
             //RPGAbout();
             //SpaceShioAbout();
             //dell();
-            TimerTest();
+            //TimerTest();
             Console.ReadLine();
         }
 
@@ -67,11 +68,16 @@ namespace test
 
         #region TimerTest
 
-        static void TimerTest()
-        {
-            mt.SetTimer(0, 1000, 10, 66);
-            //Console.WriteLine(sizeof(MyTimer));
-        }
+        //static void TimerTest()
+        //{
+        //    Console.WriteLine("QAQ->");
+        //    mt.SetTimer(0, 1000, -1, 66);
+
+        //    Thread.Sleep(5000);
+        //    Console.WriteLine("QAQ->");
+        //    mt.SetTimer(0, 1000, -1, 66);
+        //    //Console.WriteLine(sizeof(MyTimer));
+        //}
 
         #endregion
 
@@ -102,68 +108,68 @@ namespace test
             //}
             //Console.WriteLine(pps(array, g => g.a));
             //Console.WriteLine(pps(array, g => g.b));
-            pp += ddd;
-            pp += ddd;
-            pp += ddd;
-            pp += ddd;
-            pp += ddd;
+            //pp += ddd;
+            //pp += ddd;
+            //pp += ddd;
+            //pp += ddd;
+            //pp += ddd;
 
-            pp();
+            //pp();
 
-            Console.WriteLine("-----------------------");
+            //Console.WriteLine("-----------------------");
 
             //pp -= ddd;
             //pp -= ddd;
             //pp -= ddd;
             //pp -= ddd;
 
-            pp();
+            //pp();
 
-            Console.WriteLine("-----------------------");
-        }
-
-        private static int tt = 0;
-        static void ddd()
-        {
-            Console.WriteLine("ddd - " + (++tt));
+            //Console.WriteLine("-----------------------");
         }
 
-        public static void pp1(string pp, int t)
-        {
-            Console.WriteLine("pp1 " + pp + " " + t);
-        }
-        public static string pp2(int t)
-        {
-            Console.WriteLine("pp2 " + t);
-            return "";
-        }
-        public static string pp2_1(int t)
-        {
-            Console.WriteLine("pp2_1 " + t);
-            return "";
-        }
-        public static int pp4(string t)
-        {
-            Console.WriteLine("pp4 " + t);
-            return 0;
-        }
-        public static void pp3()
-        {
-            Console.WriteLine("pp3");
-        }
+        //private static int tt = 0;
+        //static void ddd()
+        //{
+        //    Console.WriteLine("ddd - " + (++tt));
+        //}
 
-        static string pps(List<TestDele> p, getii g)
-        {
-            int t = 0;
-            string ss = "mm";
-            foreach (TestDele sp in p)
-            {
-                int ft = g(sp);
-                Console.WriteLine(ft);
-                if (ft > t) t = ft;
-            }
-            return "Max" + t;
-        }
+        //public static void pp1(string pp, int t)
+        //{
+        //    Console.WriteLine("pp1 " + pp + " " + t);
+        //}
+        //public static string pp2(int t)
+        //{
+        //    Console.WriteLine("pp2 " + t);
+        //    return "";
+        //}
+        //public static string pp2_1(int t)
+        //{
+        //    Console.WriteLine("pp2_1 " + t);
+        //    return "";
+        //}
+        //public static int pp4(string t)
+        //{
+        //    Console.WriteLine("pp4 " + t);
+        //    return 0;
+        //}
+        //public static void pp3()
+        //{
+        //    Console.WriteLine("pp3");
+        //}
+
+        //static string pps(List<TestDele> p, getii g)
+        //{
+        //    int t = 0;
+        //    string ss = "mm";
+        //    foreach (TestDele sp in p)
+        //    {
+        //        int ft = g(sp);
+        //        Console.WriteLine(ft);
+        //        if (ft > t) t = ft;
+        //    }
+        //    return "Max" + t;
+        //}
 
         #endregion
 
