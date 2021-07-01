@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MyTool\MyTimer\MyTimer.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="RPG\Character\Character.cs" />
     <Compile Include="RPG\Dice\Dice.cs" />
     <Compile Include="RPG\Inventory\Inventory.cs" />
@@ -68,9 +71,6 @@
     <Compile Include="SpaceShip\SpaceShip.cs" />
     <Compile Include="SpaceShip\SupportSystem\SupportSystem.cs" />
     <Compile Include="SpaceShip\System.cs" />
-    <Compile Include="Utils\MyTimer\MyTimer.cs">
-      <SubType>Component</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

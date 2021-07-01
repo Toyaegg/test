@@ -24,23 +24,56 @@ namespace test
         private static event ppd pp;
 
         private getii moo;
+
+        static MyTimer mt = new MyTimer(true, false);
         static void Main(string[] args)
         {
-            RPGAbout();
+            mt.myEventHandler += TimerDo;
+            //RPGAbout();
             //SpaceShioAbout();
             //dell();
-            //MyTimer mt = new MyTimer();
-            //mt.SetTimer(1,1000,10,66);
-            //mt.myEventHandler += TimerDo;
-            //mt.StartTimer();
-
+            TimerTest();
             Console.ReadLine();
         }
 
         public static void TimerDo(int timerID, int bindPara)
         {
-            Console.WriteLine("TimerDo timerID : {0}\tbindPara : {1}", timerID, bindPara);
+            //Console.WriteLine("TimerDo timerID : {0}\tbindPara : {1}", timerID, bindPara);
+            switch (timerID)
+            {
+                case 0:
+                {
+                    Console.WriteLine("666->" + bindPara);
+                    break;
+                }
+                case 1:
+                {
+                    Console.WriteLine("SB->" + bindPara);
+                    break;
+                }
+                case 2:
+                {
+                    Console.WriteLine("WDNMD->" + bindPara);
+                    break;
+                }
+                case 3:
+                {
+                    Console.WriteLine("QAQ->" + bindPara);
+                    GC.Collect();
+                    break;
+                }
+            }
         }
+
+        #region TimerTest
+
+        static void TimerTest()
+        {
+            mt.SetTimer(0, 1000, 10, 66);
+            //Console.WriteLine(sizeof(MyTimer));
+        }
+
+        #endregion
 
         #region Delegate
 
