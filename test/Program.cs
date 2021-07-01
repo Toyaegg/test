@@ -1,12 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Threading;
-using System.Timers;
 using test.SpaceShips;
 
 namespace test
@@ -37,34 +29,34 @@ namespace test
             Console.ReadLine();
         }
 
-        public static void TimerDo(int timerID, int bindPara)
-        {
-            //Console.WriteLine("TimerDo timerID : {0}\tbindPara : {1}", timerID, bindPara);
-            switch (timerID)
-            {
-                case 0:
-                {
-                    Console.WriteLine("666->" + bindPara);
-                    break;
-                }
-                case 1:
-                {
-                    Console.WriteLine("SB->" + bindPara);
-                    break;
-                }
-                case 2:
-                {
-                    Console.WriteLine("WDNMD->" + bindPara);
-                    break;
-                }
-                case 3:
-                {
-                    Console.WriteLine("QAQ->" + bindPara);
-                    GC.Collect();
-                    break;
-                }
-            }
-        }
+        //public static void TimerDo(int timerID, int bindPara)
+        //{
+        //    //Console.WriteLine("TimerDo timerID : {0}\tbindPara : {1}", timerID, bindPara);
+        //    switch (timerID)
+        //    {
+        //        case 0:
+        //        {
+        //            Console.WriteLine("666->" + bindPara);
+        //            break;
+        //        }
+        //        case 1:
+        //        {
+        //            Console.WriteLine("SB->" + bindPara);
+        //            break;
+        //        }
+        //        case 2:
+        //        {
+        //            Console.WriteLine("WDNMD->" + bindPara);
+        //            break;
+        //        }
+        //        case 3:
+        //        {
+        //            Console.WriteLine("QAQ->" + bindPara);
+        //            GC.Collect();
+        //            break;
+        //        }
+        //    }
+        //}
 
         #region TimerTest
 
