@@ -43,10 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Character\Character.cs" />
-    <Compile Include="Dice\Dice.cs" />
-    <Compile Include="Inventory\Inventory.cs" />
-    <Compile Include="Inventory\Item.cs" />
+    <Compile Include="RPG\Character\Character.cs" />
+    <Compile Include="RPG\Dice\Dice.cs" />
+    <Compile Include="RPG\Inventory\Inventory.cs" />
+    <Compile Include="RPG\Inventory\Item.cs" />
     <Compile Include="Manager\DefenseSystemManager.cs" />
     <Compile Include="Manager\Manager.cs" />
     <Compile Include="Manager\ShipSystemManeger.cs" />
@@ -68,6 +68,9 @@
     <Compile Include="SpaceShip\SpaceShip.cs" />
     <Compile Include="SpaceShip\SupportSystem\SupportSystem.cs" />
     <Compile Include="SpaceShip\System.cs" />
+    <Compile Include="Utils\MyTimer\MyTimer.cs">
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

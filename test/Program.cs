@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 using test.SpaceShips;
 
 namespace test
@@ -15,16 +17,29 @@ namespace test
         private static Func<string, int> func1;
         private static Func<int, string> func2;
 
-        delegate int getii(testDele s);
+        delegate int getii(TestDele s);
+
+        delegate void ppd();
+
+        private static event ppd pp;
 
         private getii moo;
         static void Main(string[] args)
         {
-            //RPGAbout();
+            RPGAbout();
             //SpaceShioAbout();
-            dell();
+            //dell();
+            //MyTimer mt = new MyTimer();
+            //mt.SetTimer(1,1000,10,66);
+            //mt.myEventHandler += TimerDo;
+            //mt.StartTimer();
 
             Console.ReadLine();
+        }
+
+        public static void TimerDo(int timerID, int bindPara)
+        {
+            Console.WriteLine("TimerDo timerID : {0}\tbindPara : {1}", timerID, bindPara);
         }
 
         #region Delegate
@@ -41,20 +56,45 @@ namespace test
             //act2("www", 0);
             //func1("dd");
             //func2(0);
-            List<testDele> array = new List<testDele>();
-            Random random = new Random();
-            for (int i = 0; i < 20; i++)
-            {
-                testDele t = new testDele()
-                {
-                    a = random.Next(1,20),
-                    b = random.Next(21, 50)
-                };
-                array.Add(t);
-            }
-            Console.WriteLine(pps(array, g => g.a));
-            Console.WriteLine(pps(array, g => g.b));
+            //List<TestDele> array = new List<TestDele>();
+            //Random random = new Random();
+            //for (int i = 0; i < 20; i++)
+            //{
+            //    TestDele t = new TestDele()
+            //    {
+            //        a = random.Next(1,20),
+            //        b = random.Next(21, 50)
+            //    };
+            //    array.Add(t);
+            //}
+            //Console.WriteLine(pps(array, g => g.a));
+            //Console.WriteLine(pps(array, g => g.b));
+            pp += ddd;
+            pp += ddd;
+            pp += ddd;
+            pp += ddd;
+            pp += ddd;
+
+            pp();
+
+            Console.WriteLine("-----------------------");
+
+            //pp -= ddd;
+            //pp -= ddd;
+            //pp -= ddd;
+            //pp -= ddd;
+
+            pp();
+
+            Console.WriteLine("-----------------------");
         }
+
+        private static int tt = 0;
+        static void ddd()
+        {
+            Console.WriteLine("ddd - " + (++tt));
+        }
+
         public static void pp1(string pp, int t)
         {
             Console.WriteLine("pp1 " + pp + " " + t);
@@ -79,11 +119,11 @@ namespace test
             Console.WriteLine("pp3");
         }
 
-        static string pps(List<testDele> p, getii g)
+        static string pps(List<TestDele> p, getii g)
         {
             int t = 0;
             string ss = "mm";
-            foreach (testDele sp in p)
+            foreach (TestDele sp in p)
             {
                 int ft = g(sp);
                 Console.WriteLine(ft);
@@ -96,47 +136,47 @@ namespace test
 
         #region RPGAbout
 
-        //static void RPGAbout()
-        //{
-        //    Player p = new Player();
+        static void RPGAbout()
+        {
+            Player p = new Player();
 
-        //    GameManager.Instance.RegistPlayer(p);
+            GameManager.Instance.RegistPlayer(p);
 
-        //    AttributeManager.Instance.ShowAttribute();
-        //    AttributeManager.Instance.ChangeName("dddd");
+            AttributeManager.Instance.ShowAttribute();
+            AttributeManager.Instance.ChangeName("dddd");
 
-        //    p.Attribute.curSTR = AttributeManager.Instance.ChangeAttribute(p.Attribute.baseSTR, 30);
-        //    p.Attribute.curDEX = AttributeManager.Instance.ChangeAttribute(p.Attribute.baseDEX, 6);
-        //    p.Attribute.curCON = AttributeManager.Instance.ChangeAttributePer(p.Attribute.baseCON, 1.6f);
-        //    p.Attribute.curSTR = AttributeManager.Instance.ChangeAttribute(p.Attribute.baseSTR, -6);
-        //    p.Attribute.curSTR = AttributeManager.Instance.ChangeCurAttribute(p.Attribute.curSTR, 16);
-        //    p.Attribute.curSTR = AttributeManager.Instance.ChangeCurAttributePer(p.Attribute.curSTR, 1.2f);
-        //    p.Attribute.curMAG = AttributeManager.Instance.ChangeCurAttributePer(p.Attribute.curMAG, 0.2f);
+            p.Attribute.curSTR = AttributeManager.Instance.ChangeAttribute(p.Attribute.baseSTR, 30);
+            p.Attribute.curDEX = AttributeManager.Instance.ChangeAttribute(p.Attribute.baseDEX, 6);
+            p.Attribute.curCON = AttributeManager.Instance.ChangeAttributePer(p.Attribute.baseCON, 1.6f);
+            p.Attribute.curSTR = AttributeManager.Instance.ChangeAttribute(p.Attribute.baseSTR, -6);
+            p.Attribute.curSTR = AttributeManager.Instance.ChangeCurAttribute(p.Attribute.curSTR, 16);
+            p.Attribute.curSTR = AttributeManager.Instance.ChangeCurAttributePer(p.Attribute.curSTR, 1.2f);
+            p.Attribute.curMAG = AttributeManager.Instance.ChangeCurAttributePer(p.Attribute.curMAG, 0.2f);
 
-        //    Console.WriteLine("name:{0}", GameManager.Instance.player.Attribute.name);
-        //    Console.WriteLine("STR:{0}", GameManager.Instance.player.Attribute.curSTR);
-        //    Console.WriteLine("DEX:{0}", GameManager.Instance.player.Attribute.curDEX);
-        //    Console.WriteLine("CON:{0}", GameManager.Instance.player.Attribute.curCON);
-        //    Console.WriteLine("MAG:{0}", GameManager.Instance.player.Attribute.curMAG);
+            Console.WriteLine("name:{0}", GameManager.Instance.player.Attribute.name);
+            Console.WriteLine("STR:{0}", GameManager.Instance.player.Attribute.curSTR);
+            Console.WriteLine("DEX:{0}", GameManager.Instance.player.Attribute.curDEX);
+            Console.WriteLine("CON:{0}", GameManager.Instance.player.Attribute.curCON);
+            Console.WriteLine("MAG:{0}", GameManager.Instance.player.Attribute.curMAG);
 
-        //    DiceRandomManager.Instance.RandomDice(3, 6);
-        //    //DiceRandomManager.Instance.RandomDice(3, 1);
+            DiceRandomManager.Instance.RandomDice(3, 6);
+            //DiceRandomManager.Instance.RandomDice(3, 1);
 
-        //    InventoryManager.Instance.AddMoney(1, 2, 3);
-        //    InventoryManager.Instance.RemoveMoney(0, 60, 86);
+            InventoryManager.Instance.AddMoney(1, 2, 3);
+            InventoryManager.Instance.RemoveMoney(0, 60, 86);
 
-        //    Item item = new Item();
-        //    Item item2 = new Item();
-        //    item.Name = "皮皮虾";
-        //    item2.Name = "5";
-        //    InventoryManager.Instance.AddItem(item, 30);
-        //    InventoryManager.Instance.RemoveItem(item, 20);
-        //    InventoryManager.Instance.RemoveItem(item, 20);
-        //    InventoryManager.Instance.GetItem("5");
-        //    InventoryManager.Instance.GetItem("皮皮虾");
-        //    InventoryManager.Instance.RemoveItem(item, 10);
-        //    InventoryManager.Instance.RemoveItem(item2, 30);
-        //}
+            Item item = new Item();
+            Item item2 = new Item();
+            item.Name = "皮皮虾";
+            item2.Name = "5";
+            InventoryManager.Instance.AddItem(item, 30);
+            InventoryManager.Instance.RemoveItem(item, 20);
+            InventoryManager.Instance.RemoveItem(item, 20);
+            InventoryManager.Instance.GetItem("5");
+            InventoryManager.Instance.GetItem("皮皮虾");
+            InventoryManager.Instance.RemoveItem(item, 10);
+            InventoryManager.Instance.RemoveItem(item2, 30);
+        }
 
         #endregion
 
@@ -167,7 +207,7 @@ namespace test
         #endregion
     }
 
-    class testDele
+    struct TestDele
     {
         public int a;
         public int b;
