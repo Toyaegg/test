@@ -77,7 +77,7 @@ namespace test
 
         private void ClearTimer()
         {
-            if(true)
+            if(isBind)
             {
                 Elapsed -= MyEvent;
                 isBind = false;
