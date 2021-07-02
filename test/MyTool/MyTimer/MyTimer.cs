@@ -46,7 +46,7 @@ namespace test
 
         public MyTimer()
         {
-
+            
         }
 
         public MyTimer(bool autoStart, bool autoClose)

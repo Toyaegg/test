@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Threading;
+using System.Timers;
 using test.SpaceShips;
 
 namespace test
@@ -18,58 +20,58 @@ namespace test
 
         //private getii moo;
 
-        //static MyTimer mt = new MyTimer(true, false);
+        static MyTimer mt = new MyTimer(true, false);
         static void Main(string[] args)
         {
-            //mt.myEventHandler += TimerDo;
+            mt.myEventHandler += TimerDo;
             //RPGAbout();
             //SpaceShioAbout();
             //dell();
-            //TimerTest();
+            TimerTest();
             Console.ReadLine();
         }
 
-        //public static void TimerDo(int timerID, int bindPara)
-        //{
-        //    //Console.WriteLine("TimerDo timerID : {0}\tbindPara : {1}", timerID, bindPara);
-        //    switch (timerID)
-        //    {
-        //        case 0:
-        //        {
-        //            Console.WriteLine("666->" + bindPara);
-        //            break;
-        //        }
-        //        case 1:
-        //        {
-        //            Console.WriteLine("SB->" + bindPara);
-        //            break;
-        //        }
-        //        case 2:
-        //        {
-        //            Console.WriteLine("WDNMD->" + bindPara);
-        //            break;
-        //        }
-        //        case 3:
-        //        {
-        //            Console.WriteLine("QAQ->" + bindPara);
-        //            GC.Collect();
-        //            break;
-        //        }
-        //    }
-        //}
+        public static void TimerDo(int timerID, int bindPara)
+        {
+            //Console.WriteLine("TimerDo timerID : {0}\tbindPara : {1}", timerID, bindPara);
+            switch (timerID)
+            {
+                case 0:
+                    {
+                        Console.WriteLine("666->" + bindPara);
+                        break;
+                    }
+                case 1:
+                    {
+                        Console.WriteLine("SB->" + bindPara);
+                        break;
+                    }
+                case 2:
+                    {
+                        Console.WriteLine("WDNMD->" + bindPara);
+                        break;
+                    }
+                case 3:
+                    {
+                        Console.WriteLine("QAQ->" + bindPara);
+                        GC.Collect();
+                        break;
+                    }
+            }
+        }
 
         #region TimerTest
 
-        //static void TimerTest()
-        //{
-        //    Console.WriteLine("QAQ->");
-        //    mt.SetTimer(0, 1000, -1, 66);
+        static void TimerTest()
+        {
+            Console.WriteLine("QAQ->");
+            mt.SetTimer(0, 1000, -1, 66);
 
-        //    Thread.Sleep(5000);
-        //    Console.WriteLine("QAQ->");
-        //    mt.SetTimer(0, 1000, -1, 66);
-        //    //Console.WriteLine(sizeof(MyTimer));
-        //}
+            Thread.Sleep(5000);
+            Console.WriteLine("QAQ->");
+            mt.SetTimer(0, 1000, -1, 66);
+            //Console.WriteLine(sizeof(MyTimer));
+        }
 
         #endregion
 
