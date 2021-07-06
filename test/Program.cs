@@ -20,14 +20,14 @@ namespace test
 
         //private getii moo;
 
-        static MyTimer mt = new MyTimer(true, false);
+        //static MyTimer mt = new MyTimer(true, false);
         static void Main(string[] args)
         {
-            mt.myEventHandler += TimerDo;
-            //RPGAbout();
+            //mt.myEventHandler += TimerDo;
+            RPGAbout();
             //SpaceShioAbout();
             //dell();
-            TimerTest();
+            //TimerTest();
             Console.ReadLine();
         }
 
@@ -62,16 +62,16 @@ namespace test
 
         #region TimerTest
 
-        static void TimerTest()
-        {
-            Console.WriteLine("QAQ->");
-            mt.SetTimer(0, 1000, -1, 66);
+        //static void TimerTest()
+        //{
+        //    Console.WriteLine("QAQ->");
+        //    mt.SetTimer(0, 1000, -1, 66);
 
-            Thread.Sleep(5000);
-            Console.WriteLine("QAQ->");
-            mt.SetTimer(0, 1000, -1, 66);
-            //Console.WriteLine(sizeof(MyTimer));
-        }
+        //    Thread.Sleep(5000);
+        //    Console.WriteLine("QAQ->");
+        //    mt.SetTimer(0, 1000, -1, 66);
+        //    //Console.WriteLine(sizeof(MyTimer));
+        //}
 
         #endregion
 
@@ -186,11 +186,7 @@ namespace test
             p.Attribute.curSTR = AttributeManager.Instance.ChangeCurAttributePer(p.Attribute.curSTR, 1.2f);
             p.Attribute.curMAG = AttributeManager.Instance.ChangeCurAttributePer(p.Attribute.curMAG, 0.2f);
 
-            Console.WriteLine("name:{0}", GameManager.Instance.player.Attribute.name);
-            Console.WriteLine("STR:{0}", GameManager.Instance.player.Attribute.curSTR);
-            Console.WriteLine("DEX:{0}", GameManager.Instance.player.Attribute.curDEX);
-            Console.WriteLine("CON:{0}", GameManager.Instance.player.Attribute.curCON);
-            Console.WriteLine("MAG:{0}", GameManager.Instance.player.Attribute.curMAG);
+            AttributeManager.Instance.ShowAttribute();
 
             DiceRandomManager.Instance.RandomDice(3, 6);
             //DiceRandomManager.Instance.RandomDice(3, 1);
