@@ -12,7 +12,7 @@ namespace test.SpaceShips
         public string Name { get; set; }
         public int HP { get; set; }
         public int CurHP { get; set; }
-        public DefenseSystemManager.DefenseType Type { get; set; }
+        public DefenseType Type { get; set; }
         public float Completion { get; set; }
 
         public string SelfCheck()
@@ -20,22 +20,22 @@ namespace test.SpaceShips
             return "";
         }
 
-        public DefenseSystemManager.Status GetStatus()
+        public Status GetStatus()
         {
             if (Completion < 1 && Completion > 0)
             {
-                return DefenseSystemManager.Status.受损;
+                return Status.受损;
             }
             else if (Completion == 1)
             {
-                return DefenseSystemManager.Status.在线;
+                return Status.在线;
             }
             else if (Completion == 0)
             {
-                return DefenseSystemManager.Status.离线;
+                return Status.离线;
             }
 
-            return DefenseSystemManager.Status.未知;
+            return Status.未知;
         }
 
         public void CalculateCompletion()

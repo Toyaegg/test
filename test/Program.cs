@@ -205,6 +205,9 @@ namespace test
             InventoryManager.Instance.GetItem("皮皮虾");
             InventoryManager.Instance.RemoveItem(item, 10);
             InventoryManager.Instance.RemoveItem(item2, 30);
+
+            DrawManager.Instance.ShowDrawInfo(PrizeType.物品);
+            DrawManager.Instance.ShowDrawInfo(PrizeType.NPC);
         }
 
         #endregion

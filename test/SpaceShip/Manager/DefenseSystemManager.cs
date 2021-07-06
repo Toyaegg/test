@@ -6,6 +6,21 @@ using System.Threading.Tasks;
 
 namespace test.SpaceShips
 {
+    public enum DefenseType
+    {
+        未知,
+        装甲,
+        飞机,
+        舰船,
+        武器
+    }
+    public enum Status
+    {
+        未知,
+        离线,
+        受损,
+        在线
+    }
     class DefenseSystemManager : Manager<DefenseSystemManager>
     {
         readonly List<IDefense> defenses = new List<IDefense>();
@@ -84,22 +99,6 @@ namespace test.SpaceShips
                 Console.WriteLine(tmp);
             }
             Console.WriteLine();
-        }
-
-        public enum DefenseType
-        {
-            未知,
-            装甲,
-            飞机,
-            舰船,
-            武器
-        }
-        public enum Status
-        {
-            未知,
-            离线,
-            受损,
-            在线
         }
     }
 }

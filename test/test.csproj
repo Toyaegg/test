@@ -54,14 +54,15 @@
     <Compile Include="RPG\Inventory\Wealth.cs" />
     <Compile Include="RPG\Manager\AttributeManager.cs" />
     <Compile Include="RPG\Manager\DiceManager.cs" />
+    <Compile Include="RPG\Manager\DrawManager.cs" />
     <Compile Include="RPG\Manager\GameManager.cs" />
     <Compile Include="RPG\Manager\InventoryManager.cs" />
     <Compile Include="RPG\Tools\Dice\Dice.cs" />
     <Compile Include="RPG\Inventory\Inventory.cs" />
     <Compile Include="RPG\Inventory\Item.cs" />
-    <Compile Include="Manager\DefenseSystemManager.cs" />
+    <Compile Include="SpaceShip\Manager\DefenseSystemManager.cs" />
     <Compile Include="Manager\Manager.cs" />
-    <Compile Include="Manager\ShipSystemManeger.cs" />
+    <Compile Include="SpaceShip\Manager\ShipSystemManeger.cs" />
     <Compile Include="MathUtil\MathUtil.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -87,11 +88,11 @@
   <ItemGroup>
     <Folder Include="Output\" />
     <Folder Include="RPG\Datas\" />
+    <Folder Include="RPG\Draw\" />
     <Folder Include="RPG\Effects\" />
     <Folder Include="RPG\Maps\" />
     <Folder Include="RPG\Skills\" />
     <Folder Include="RPG\Tasks\" />
-    <Folder Include="SpaceShip\Manager\" />
     <Folder Include="SpaceShip\Systems\DefenseSystem\Ship\" />
     <Folder Include="SpaceShip\Systems\DefenseSystem\Weapon\" />
     <Folder Include="SpaceShip\Systems\ECOSystem\Canteen\" />

@@ -11,7 +11,7 @@ namespace test.SpaceShips
         public LightArmor()
         {
             CurHP = HP = 350;
-            Type = DefenseSystemManager.DefenseType.装甲;
+            Type = DefenseType.装甲;
         }
     }
 }

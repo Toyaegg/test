@@ -13,11 +13,11 @@ namespace test.SpaceShips
         int HP { get; set; }
         int CurHP { get; set; }
 
-        DefenseSystemManager.DefenseType Type { get; set; }
+        DefenseType Type { get; set; }
 
         float Completion { get; set; }
 
-        DefenseSystemManager.Status GetStatus();
+        Status GetStatus();
 
         void CalculateCompletion();
 

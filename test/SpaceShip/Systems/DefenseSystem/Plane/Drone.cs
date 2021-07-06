@@ -11,7 +11,7 @@ namespace test.SpaceShips
         public Drone()
         {
             CurHP = HP = 50;
-            Type = DefenseSystemManager.DefenseType.飞机;
+            Type = DefenseType.飞机;
         }
     }
 }
