@@ -28,6 +28,7 @@ namespace test
             //SpaceShioAbout();
             //dell();
             //TimerTest();
+            Console.WriteLine(args[0]);
             Console.ReadLine();
         }
 

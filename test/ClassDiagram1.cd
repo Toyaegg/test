@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="test.Manager&lt;T&gt;" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAABAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Manager\Manager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.MathUtil" Collapsed="true">
+    <Position X="24.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MathUtil\MathUtil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.MyTimer" Collapsed="true">
+    <Position X="26.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GCAAAAAAAAQAAAAAEAAAABIIAACAAAAAAiBAQhIABEA=</HashCode>
+      <FileName>MyTool\MyTimer\MyTimer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.Program" Collapsed="true">
+    <Position X="28" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAEAAAAAAAAAAgAAAAABACAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.Attribute" Collapsed="true">
+    <Position X="22.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYCAAABAAAAAAAAAAAAAAAEIQiBEACQAAAAAAAAAAAA=</HashCode>
+      <FileName>RPG\Characters\Attribute\Attribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.BaseCharacter" Collapsed="true">
+    <Position X="5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RPG\Characters\Character\Character.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.NPC" Collapsed="true">
+    <Position X="3.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RPG\Characters\NPC\NPC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.Player" Collapsed="true">
+    <Position X="6" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RPG\Characters\Player\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.Inventory" Collapsed="true">
+    <Position X="26.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAQAACgEAAIAAEAAAAAAAAAAA=</HashCode>
+      <FileName>RPG\Inventory\Inventory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.InventoryCell" Collapsed="true">
+    <Position X="28" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAQAAAQEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RPG\Inventory\InventoryCell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.Item" Collapsed="true">
+    <Position X="22.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RPG\Inventory\Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.Wealth" Collapsed="true">
+    <Position X="24.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAlAAAAFAAAAhAAAAIAEAAAABAAAA=</HashCode>
+      <FileName>RPG\Inventory\Wealth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.AttributeManager" Collapsed="true">
+    <Position X="17.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAIACAAAAAAQAAAAAgAAAAgAAAAAAAAAAAAACEAAAAA=</HashCode>
+      <FileName>RPG\Manager\AttributeManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.DiceRandomManager" Collapsed="true">
+    <Position X="4.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>RPG\Manager\DiceManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.DrawManager" Collapsed="true">
+    <Position X="8.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAACAABAAAAAAAAAAAAIgAAAAAQAAQEIIIEA=</HashCode>
+      <FileName>RPG\Manager\DrawManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.GameManager" Collapsed="true">
+    <Position X="13.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAACAAAAAAgAAAgAAAAAACCABAAAAAQAAEAA=</HashCode>
+      <FileName>RPG\Manager\GameManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.InventoryManager" Collapsed="true">
+    <Position X="15.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAEAAAAAAAAAAgAAAAAAGAAABAAAAAAA=</HashCode>
+      <FileName>RPG\Manager\InventoryManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.Dice" Collapsed="true">
+    <Position X="24.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>RPG\Tools\Dice\Dice.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.SpaceShips.DefenseSystemManager" Collapsed="true">
+    <Position X="6.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAiABAEABAAAAAIIAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SpaceShip\Manager\DefenseSystemManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.SpaceShips.ShipSystemManager" Collapsed="true">
+    <Position X="11" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEACAAAAAAA=</HashCode>
+      <FileName>SpaceShip\Manager\ShipSystemManeger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.SpaceShips.SpaceShip" Collapsed="true">
+    <Position X="22.75" Y="2.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="test.SpaceShips.SpaceShip.ShipType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>SpaceShip\SpaceShip.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>GCCAAAAAAEAAAAwABAAAQAQCIAggAFQAIIACEAEIEBA=</HashCode>
+      <FileName>SpaceShip\SpaceShip.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.SpaceShips.ShipSystem" Collapsed="true">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAgAMQQEQABAAAAAAAgCAAAIAAA=</HashCode>
+      <FileName>SpaceShip\System.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.SpaceShips.Armor" Collapsed="true">
+    <Position X="11.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEBAAACgAAAAAAAAAQGRAAAAAAAAQgAgAAAAAA=</HashCode>
+      <FileName>SpaceShip\Systems\DefenseSystem\Armor\Armor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="test.SpaceShips.LightArmor" Collapsed="true">
+    <Position X="11.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SpaceShip\Systems\DefenseSystem\Armor\LightArmor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.SpaceShips.DefenseSystem" Collapsed="true">
+    <Position X="4.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAgAEQAEAABAAAAAAAACAAAAAAI=</HashCode>
+      <FileName>SpaceShip\Systems\DefenseSystem\DefenseSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.SpaceShips.Drone" Collapsed="true">
+    <Position X="8.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SpaceShip\Systems\DefenseSystem\Plane\Drone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.SpaceShips.Plane" Collapsed="true">
+    <Position X="8.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAgAAAAAAAAAQGRAAAAAAAAQgAgAAAAAA=</HashCode>
+      <FileName>SpaceShip\Systems\DefenseSystem\Plane\Plane.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="test.SpaceShips.ECOSystem" Collapsed="true">
+    <Position X="15.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAgAEQAEAABAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>SpaceShip\Systems\ECOSystem\ECOSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.SpaceShips.EnergySystem" Collapsed="true">
+    <Position X="18" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAgAEQAEAABAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>SpaceShip\Systems\EnergySystem\EnergySystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.SpaceShips.FirepowerSystem" Collapsed="true">
+    <Position X="20.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAgAEQAEAABAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>SpaceShip\Systems\FirepowerSystem\FirepowerSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.SpaceShips.PowerSystem" Collapsed="true">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAgAEQAEAABAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>SpaceShip\Systems\PowerSystem\PowerSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.SpaceShips.RecyclingSystem" Collapsed="true">
+    <Position X="9" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAgAEQAEAABAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>SpaceShip\Systems\RecyclingSystem\RecyclingSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.SpaceShips.ResourceSystem" Collapsed="true">
+    <Position X="11.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAgAEQAEAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SpaceShip\Systems\ResourceSystem\ResourceSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="test.SpaceShips.SupportSystem" Collapsed="true">
+    <Position X="13.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAgAEQAEAABAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>SpaceShip\Systems\SupportSystem\SupportSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="test.TestDele" Collapsed="true">
+    <Position X="22.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAQAAAAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="test.SpaceShips.IDefense" Collapsed="true">
+    <Position X="22.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAgAAAAAAAAAQGRAAAAAAAAQAAgAAAAAA=</HashCode>
+      <FileName>SpaceShip\Systems\DefenseSystem\IDefense.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="test.PrizeType" Collapsed="true">
+    <Position X="24.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgABAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RPG\Manager\DrawManager.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="test.SpaceShips.DefenseType" Collapsed="true">
+    <Position X="22.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAgAAAAAAAAAAAAAAAAAQAAAAAAQAgAAAAAA=</HashCode>
+      <FileName>SpaceShip\Manager\DefenseSystemManager.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="test.SpaceShips.Status" Collapsed="true">
+    <Position X="26.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAgAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SpaceShip\Manager\DefenseSystemManager.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>
