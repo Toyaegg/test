@@ -56,7 +56,7 @@ namespace test
             {
                 tmpStr = "减少";
             }
-            Console.WriteLine("某属性从{0}{1}了{2}，现为{3}", att, tmpStr, value, tmp);
+            Console.WriteLine("某基础属性从{0}{1}了{2}，现为{3}", att, tmpStr, value, tmp);
             return att + value;
         }
 
@@ -69,7 +69,7 @@ namespace test
         public int ChangeAttributePer(int att, float value)
         {
             int tmp = (int)(att * value);
-            Console.WriteLine("某属性从{0}变化到{1}%，现为{2}", att, value * 100, tmp);
+            Console.WriteLine("某基础属性从{0}变化到{1}%，现为{2}", att, value * 100, tmp);
             return (int)(att * value);
         }
 

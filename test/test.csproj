@@ -50,6 +50,9 @@
     <Compile Include="RPG\Characters\Character\Character.cs" />
     <Compile Include="RPG\Characters\NPC\NPC.cs" />
     <Compile Include="RPG\Characters\Player\Player.cs" />
+    <Compile Include="RPG\Draw\DrawItem.cs" />
+    <Compile Include="RPG\Draw\DrawItemOfItem.cs" />
+    <Compile Include="RPG\Draw\DrawItemOfNPC.cs" />
     <Compile Include="RPG\Inventory\InventoryCell.cs" />
     <Compile Include="RPG\Inventory\Wealth.cs" />
     <Compile Include="RPG\Manager\AttributeManager.cs" />
@@ -89,8 +92,8 @@
   <ItemGroup>
     <Folder Include="Output\" />
     <Folder Include="RPG\Datas\" />
-    <Folder Include="RPG\Draw\" />
     <Folder Include="RPG\Effects\" />
+    <Folder Include="RPG\Favourable\" />
     <Folder Include="RPG\Maps\" />
     <Folder Include="RPG\Skills\" />
     <Folder Include="RPG\Tasks\" />
