@@ -207,16 +207,16 @@ namespace test
             //InventoryManager.Instance.RemoveItem(item, 10);
             //InventoryManager.Instance.RemoveItem(item2, 30);
 
-            List<NPC> npcs;
-            DrawManager.Instance.NPCDrawTen(out npcs);
-            DrawManager.Instance.NPCDrawTen(out npcs);
-            DrawManager.Instance.NPCDrawTen(out npcs);
-            DrawManager.Instance.NPCDrawTen(out npcs);
-            DrawManager.Instance.NPCDrawTen(out npcs);
-            DrawManager.Instance.ShowDrawInfo(PrizeType.物品);
-            DrawManager.Instance.ShowDrawHistory(PrizeType.物品);
-            DrawManager.Instance.ShowDrawInfo(PrizeType.NPC);
-            DrawManager.Instance.ShowDrawHistory(PrizeType.NPC);
+            //List<NPC> npcs;
+            //DrawManager.Instance.NPCDrawTen(out npcs);
+            //DrawManager.Instance.NPCDrawTen(out npcs);
+            //DrawManager.Instance.NPCDrawTen(out npcs);
+            //DrawManager.Instance.NPCDrawTen(out npcs);
+            //DrawManager.Instance.NPCDrawTen(out npcs);
+            //DrawManager.Instance.ShowDrawInfo(PrizeType.物品);
+            //DrawManager.Instance.ShowDrawHistory(PrizeType.物品);
+            //DrawManager.Instance.ShowDrawInfo(PrizeType.NPC);
+            //DrawManager.Instance.ShowDrawHistory(PrizeType.NPC);
         }
 
         #endregion
