@@ -214,16 +214,19 @@ namespace test
 
         public void ShowDrawHistory(PrizeType type)
         {
+            int num = 0;
             int[] tmp;
             switch (type)
             {
                 case PrizeType.物品:
                 {
+                    num = itemDrawNum;
                     tmp = itemCount;
                     break;
                 }
                 case PrizeType.NPC:
                 {
+                    num = npcDrawNum;
                     tmp = npcCount;
                     break;
                 }
@@ -235,7 +238,7 @@ namespace test
 
             for (int i = 0;i < tmp.Length; i++)
             {
-                Console.Write($"{i + 1}星{type} {tmp[i]}个  ");
+                Console.Write($"{i + 1}星{type} {tmp[i]}个 {((float)tmp[i] / num * 100)}%  ");
             }
             Console.WriteLine();
         }
